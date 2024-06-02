@@ -1,6 +1,6 @@
 # AuctionClub V2 coming soon
 ## Upcoming features
-###'Pleasure' price
+### 'Pleasure' price
 Sellers can set a satisfactory bid as ‘Pleasure’ during the auction process.Once someone bids again, that is, higher than pleasure, the deal can be completed immediately.
 ### Crazy Model
 Sellers can choose to join the Crazy Model in the auction. Participants need to pledge a certain amount of ETH as a participation certificate. Successful bidders can not only obtain the auction items, but also seize a certain amount of pledged funds from other participants.
