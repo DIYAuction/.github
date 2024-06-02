@@ -1,6 +1,5 @@
 # AuctionClub V2 coming soon
-
-## Bristish Auction
+## Upcoming features
 ###'Pleasure' price
 Sellers can set a satisfactory bid as ‘Pleasure’ during the auction process.Once someone bids again, that is, higher than pleasure, the deal can be completed immediately.
 ### Crazy Model
