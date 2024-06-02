@@ -9,3 +9,4 @@ Sellers can choose to join the Crazy Model in the auction. Participants need to 
 Add a charity interface to provide a way for bidders who successfully auction NFTs or make profits through our platform to do charity and donate the rewards obtained from the auction to people in need.
 
 ## Purpose
+AuctionClub is committed to providing users with a high-quality auction experience and hopes to become a leader in the auction industry through innovative auction models and intelligent auction processes.
