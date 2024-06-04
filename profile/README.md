@@ -1,66 +1,66 @@
-## AuctionClub 项目计划书
-### [项目网站](https://auctionclub.github.io/auction_frontend/)
-### 一. 概述
+## AuctionClub Project Proposal
+### [Project Website](https://auctionclub.github.io/auction_frontend/)
+### I. Overview
 
-AuctionClub是一个基于智能合约的拍卖平台，为交易者提供公平可靠的拍卖环境。平台目前支持英式拍卖和美式拍卖两种模式，同时提供了多种可供卖家自由组合的交易规则，此外，平台执行一套激励机制来实现对拍卖者的正向反馈，积极参与竞拍，即可获得竞拍份额、提取巨额收益。
-### 项目介绍
-#### 1. 开启拍卖（Starting Auction）
+AuctionClub is a smart contract-based auction platform that provides traders with a fair and reliable auction environment. The platform currently supports two auction modes: English auction and Dutch auction. It also offers a variety of trading rules that sellers can freely combine. Additionally, the platform implements an incentive mechanism to provide positive feedback to bidders. Active participation in bidding can earn bidders auction shares and extract huge profits.
 
-1. **登录和连接钱包**：
-   - 拍卖者通过插件钱包或扫码连接自己的钱包地址，进行签名授权。
-   - 平台显示该地址下所有的 NFT，供卖家选择进行拍卖。
+### Project Introduction
+#### 1. Starting Auction
 
-2. **选择拍卖模式**：
-   - 卖家可以选择两种拍卖模式：英式拍卖或荷兰式拍卖。
+1. **Login and Connect Wallet**:
+   - Auctioneers connect their wallet address through a plugin wallet or by scanning a QR code for authorization.
+   - The platform displays all NFTs under this address for the seller to choose for auction.
 
-#### 2. 英式拍卖
+2. **Select Auction Mode**:
+   - Sellers can choose between two auction modes: English auction or Dutch auction.
 
-1. **创建拍卖**：
-   - 卖家选择需要拍卖的NFT，然年设定起拍价、起拍时间、出价后间隔时间。
-     
-2. **竞拍机制**：
-   - 重复的叫价者只需在第一次叫价的基础上补充差额，即可再次参与竞价，简化操作流程。
-   - 每次竞拍加价不低于起拍价的5%
+#### 2. English Auction
 
-3. **激励机制**：
-   - 拍卖结束后，除成功竞拍到 NFT 者外，其他参与者将按照其竞拍资金比例分配成交价的 3% 作为奖励金，等到拍卖结束后会累加到参与叫价者的余额里。
+1. **Create Auction**:
+   - Sellers select the NFTs for auction and set the starting price, starting time, and bidding interval after each bid.
 
-4. **资金处理**：
-   - 最终竞拍价的 2% 作为平台手续费注入资金池。
+2. **Bidding Mechanism**:
+   - Bidders who bid repeatedly only need to add the difference on top of their initial bid, simplifying the bidding process.
+   - Each bid increment must be at least 5% of the starting price.
 
-#### 3. 荷兰式拍卖
+3. **Incentive Mechanism**:
+   - After the auction ends, apart from the successful bidder, other participants will receive 3% of the final price as a reward, distributed according to their bidding funds. The accumulated reward will be added to the balance of the participants who bid when the auction ends.
 
-1. **创建拍卖 (Starting Auction)**：
-   - 卖家选择需要拍卖的NFT，然年设定起拍价、底价、起拍时间、价格衰减间隔、衰减金额以及到达低价后的保留时间。
-   - 价格衰减间隔需要小于10分钟，衰减的金额需大于(起拍价-底价)的5%，保留时间需小于20分钟
-2. **竞拍机制**：
-   - 开始拍卖后NFT的价格会随着时间的流逝而衰减，竞拍者在达到心理预期价位后应价即成交。
+4. **Fund Handling**:
+   - 2% of the final bid price is injected into the fund pool as a platform fee.
 
-3. **激励机制**：
-    - 这种拍卖模式能够吸引那些愿意等待价格下降到自己心理价位的买家，同时也能促使一些买家在价格较高时就决定购买，以免错失拍品。
-      
-4. **资金处理**：
-   - 平台收取成交的3%作为手续费。
+#### 3. Dutch Auction
 
-#### 4. 结束拍卖
+1. **Create Auction**:
+   - Sellers select the NFTs for auction and set the starting price, reserve price, starting time, price decay interval, decay amount, and reserve time after reaching the reserve price.
+   - The price decay interval must be less than 10 minutes, the decay amount must be greater than 5% of the starting price minus the reserve price, and the reserve time must be less than 20 minutes.
 
-1. 拍卖结束后，竞拍者和卖家的资金变化都会在账单里有记录，竞拍者成功竞拍则获得nft，卖家获得的eth会记录在个人余额里，在个人中心可查看自己的余额，提现后，eth会从资金池发送到钱包里。
+2. **Bidding Mechanism**:
+   - After the auction starts, the price of the NFT will decay over time. Bidders can bid when the price reaches their expected price.
 
-   
-### 预期效果
+3. **Incentive Mechanism**:
+   - This auction mode attracts buyers willing to wait for the price to drop to their expected price, while also prompting some buyers to decide to purchase when the price is high to avoid missing out on the item.
 
-通过引入激励机制的拍卖模式，平台预计将吸引更多竞拍者参与，增加拍卖的活跃度和成交量。同时，质押机制和平台服务费的设置将确保平台的安全性和可持续运营。
+4. **Fund Handling**:
+   - The platform charges a 3% fee on the transaction amount.
 
-### 未来发展
+#### 4. End of Auction
 
-1. **功能扩展**：
-   - 增加更多拍卖模式和激励机制，满足不同用户的需求。
-   
-2. **跨链兼容**：
-   - 支持更多区块链网络上的 NFT 拍卖。
+1. After the auction ends, the changes in funds for bidders and sellers will be recorded in the statement. Bidders who successfully bid will receive the NFT, and sellers will receive ETH, which will be recorded in their personal balance. They can view their balance in the personal center and withdraw it. The ETH will be sent from the fund pool to their wallet after withdrawal.
 
-3. **生态系统构建**：
-   - 发展拍卖之外的 NFT 生态系统，如 NFT 质押、借贷等功能，提升平台的整体价值。
+### Expected Effects
 
-AuctionClub致力于为用户提供优质的拍卖体验，希望通过创新的拍卖模式和智能化的拍卖流程，成为拍卖行业的领导者。
+By introducing an incentive mechanism for auctions, the platform expects to attract more bidders, increase the activity and volume of auctions. Meanwhile, the setting of the pledging mechanism and platform service fees will ensure the security and sustainable operation of the platform.
 
+### Future Development
+
+1. **Feature Expansion**:
+   - Add more auction modes and incentive mechanisms to meet the needs of different users.
+
+2. **Cross-chain Compatibility**:
+   - Support NFT auctions on more blockchain networks.
+
+3. **Ecosystem Building**:
+   - Develop an NFT ecosystem beyond auctions, such as NFT pledging, lending, etc., to enhance the overall value of the platform.
+
+AuctionClub is committed to providing users with a high-quality auction experience and aims to become a leader in the auction industry through innovative auction models and intelligent auction processes.
