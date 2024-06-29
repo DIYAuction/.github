@@ -1,7 +1,7 @@
 ## AuctionClub Project Proposal
 ### [Project Website](https://auctionclub.github.io/auction_frontend_linea/)
 ### linea sepolia test private key:6cfbe54bb987cc06b901185d23354f981ceb421503d5ecf7b0fb8bc33143d0e3 (We used our own deployed EFrogNFT for this private key)
-### (After Chainlink Automation supports Linea, we will support contract automation)
+### (Currently, Chainlink Automation does not support the Linea network, but it does not matter. Once Chainlink Automation supports Linea, we will provide support as soon as possible.)
 ### I. Overview
 
 AuctionClub is a smart contract-based auction platform that provides traders with a fair and reliable auction environment. The platform currently supports two auction modes: English auction and Dutch auction. It also offers a variety of trading rules that sellers can freely combine. Additionally, the platform implements an incentive mechanism to provide positive feedback to bidders. Active participation in bidding can earn bidders auction shares and extract huge profits.
